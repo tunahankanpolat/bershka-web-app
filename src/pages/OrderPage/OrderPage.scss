@@ -1,0 +1,124 @@
+#orderPage {
+  box-sizing: border-box;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+    align-items: center;
+    border-bottom: 1px solid black;
+    .turnBack {
+      i {
+        margin-right: 0.5rem;
+        
+      }
+    }
+    .link{
+      text-decoration: none;
+      color: black;
+      .logo {
+        font-size: 2rem;
+      }
+    }
+
+  }
+  .body {
+    display: flex;
+    .left-side {
+      width: 50vw;
+
+    }
+    .right-side {
+      width: 50vw;
+      padding: 3rem 10rem 5rem 10rem;
+      .order-title {
+        padding-bottom: 1rem;
+      }
+      .order-summary {
+        height: 350px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          width: 0px;
+        }
+
+        .product {
+          display: flex;
+          padding-bottom: 1rem;
+          .product-right {
+            padding-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .sub-info {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+      .campaign-code {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        i {
+          color: #555;
+        }
+        input {
+          outline: none;
+          border: none;
+          width: 100%;
+          padding: 0.2rem 1rem;
+        }
+      }
+      .order-prices {
+        .basket-total {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 1rem;
+          .total {
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+        }
+        .ship-price {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 1rem;
+          .ship {
+            font-size: 1.5rem;
+            font-weight: 600;
+          }
+        }
+        .order-total {
+          .up {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            .total {
+              font-size: 1.5rem;
+              font-weight: 600;
+            }
+          }
+          .down {
+            margin-top: -1rem;
+            font-size: 0.8rem;
+            color: #888;
+          }
+        }
+      }
+      button {
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 0.5rem 0;
+        margin-top: 1rem;
+        transition: .5s all;
+        &:hover{
+            background-color: aquamarine;
+            border: aquamarine 1px solid;
+            color: black;
+        }
+      }
+    }
+  }
+}

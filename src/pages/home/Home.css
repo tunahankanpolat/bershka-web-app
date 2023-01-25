@@ -1,0 +1,57 @@
+.homePage{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.homePage .header{
+  position:absolute;
+  top: 1%;
+  left: 46%;
+  color: white;
+  z-index: 999;
+}
+
+.homePage .left{
+  background-image: url(../../images/index_woman.jpg);
+  width: 50vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.homePage .right{
+  background-image: url(../../images/index_man.jpg);
+  width: 50vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.homePage .left h2 , .right h2{
+  text-align: center;
+  font-size: 7rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.homePage .left h5 , .right h5{
+  text-align: center;
+  margin-top: 40vh;
+  font-size: .8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom:1rem;
+  font-weight: bold;
+  letter-spacing: .02rem;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+}
+
+
+.link:hover{
+  text-decoration: none;
+  color: white;
+}

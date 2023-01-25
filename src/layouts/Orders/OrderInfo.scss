@@ -1,0 +1,35 @@
+#orderInfo {
+  box-sizing: border-box;
+  padding: 3.5rem 10rem;
+  .title {
+    padding-bottom: 3rem;
+  }
+
+  .addressLines {
+    padding: 0.2rem 0;
+    overflow-y: scroll;
+    height: 600px;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    .inp-group{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 4rem;
+
+        label{
+            &:hover{
+                cursor: pointer;
+            }
+            margin-left:1rem;
+            margin-top: -.5rem;
+            width: 100%;
+            :first-child{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+  }
+}

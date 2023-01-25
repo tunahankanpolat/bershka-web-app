@@ -1,0 +1,103 @@
+#liked{
+    box-sizing: border-box;
+
+    .wrapper{
+        padding: 4rem 3rem 1rem 3rem;
+        .header{
+            color: black;
+            font-weight: bold;
+            font-size: 1.2rem;
+
+        }
+        .sub-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            .empty{
+                width: 100%;
+                height: 86vh;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                i{
+                    font-size: 6rem;
+                }
+            }
+            .liked-link{
+                color: inherit;
+                text-decoration: inherit;
+                .like-card{
+                    border: none;
+                    margin: 1rem 1rem 1rem 1rem;
+                    .like-card-header{
+                        width: 500px;
+                        img{
+                            width: 100%;
+                        }
+                                        
+                &:hover{
+                    opacity: .5;
+                    
+                }
+                    }
+    
+                    .like-card-footer{
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: .5rem;
+                        span{
+                            font-size: 1.5rem;
+                            color: red;
+                        }
+                        .card-description{
+                            font-size: .9rem;
+                            .card-price{
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    
+                }
+
+
+            }
+
+       
+        }
+    }
+}
+// .left{
+//     .header{
+//         .logo{
+//             a{
+//                 color: black;
+//                 font-weight: bold;
+//             }
+//         }
+        
+//         .gender-group {
+    
+            
+//             .male,
+//             .female {
+//                 color: black;
+//             }
+
+//             .male.active,
+//             .female.active {
+//               background-color: black !important;
+//               color: #fff !important;
+//             }
+        
+//             .male:hover,
+//             .female:hover {
+//               background-color: black;
+//               color: #fff;
+//             }
+//           }
+//     }
+// }
+// .right{
+//     background-color: black;
+// }

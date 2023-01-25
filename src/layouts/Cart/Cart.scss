@@ -1,0 +1,121 @@
+#cart {
+  box-sizing: border-box;
+  .wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 375px;
+    height: 100vh;
+    background-color: #fff;
+
+
+    .empty-cart-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 75vh;
+      img{
+        width: 200px;
+      }
+      div{
+        text-align: center;
+        width: 75%;
+      }
+    }
+
+
+    .cart-upper {
+      padding: 1rem 1rem;
+      .button {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+    }
+
+    .cart-lower {
+      padding: 0 0 1rem 2rem;
+
+      .header {
+        font-weight: bold;
+        height: 5vh;
+      }
+      .content {
+        overflow-y: scroll;
+        height:75vh;
+        background-color: #fff;
+        margin-bottom: 1rem;
+        .product {
+          width: 290px;
+          display: flex;
+          margin: 1rem;
+          padding-right:1rem ;
+          .product-left {
+            width: 60%;
+            padding-right: 1rem;
+            img {
+              width: 100%;
+            }
+          }
+          .product-right {
+            width: 100%;
+            .right-up{
+                display: flex;
+                justify-content: space-between;
+                .product-price{
+                    font-weight: bold;
+                    margin-bottom: .8rem;
+                }
+                button{
+                  background-color: #fff;
+                  border: none;
+                }
+            }
+
+            .product-desc{
+                font-size: 0.8rem;
+                margin-bottom: .8rem;
+
+            }
+            .right-down{
+                display: flex;
+                justify-content: space-between;
+            }
+          }
+        }
+      }
+      .footer {
+        padding: 0 1rem 0 0;
+        .total {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          .total-left {
+            span {
+              color: #ccc;
+              font-size: 0.6rem;
+              margin-left: 0.5rem;
+            }
+          }
+        }
+        .link{
+          text-decoration: none;
+        }
+        .button {
+          margin-top: 1rem;
+          background-color: rgb(75, 216, 169);
+          padding: 0.5rem 4rem;
+          color: #fff;
+          font-weight: bold;
+          font-size: 0.8rem;
+          text-align: center;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

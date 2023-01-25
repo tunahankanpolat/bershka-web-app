@@ -1,0 +1,50 @@
+#adminPage{
+    nav{
+        display: flex;
+        padding: 1rem 2rem .5rem 2rem;
+        align-items: center;
+        border-bottom: 1px solid black;
+        
+        ul{
+            list-style: none;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            b{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .page-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        table{
+            width: 95%;
+            margin-top: 2rem;
+            border: 1px solid black;
+    
+            th,td{
+                border: 1px solid black;
+
+                button {
+                    background-color: black;
+                    color: white;
+                    width: 100%;
+                    padding: 0.5rem 0;
+                    transition: .5s all;
+                    &:hover{
+                        background-color: aquamarine;
+                        border: aquamarine 1px solid;
+                        color: black;
+                    }
+                  }
+            }
+
+        }
+    }
+
+
+}

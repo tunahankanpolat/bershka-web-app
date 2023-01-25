@@ -1,0 +1,175 @@
+.productDetail {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+
+
+  .modal-content{
+    width: 900px;
+    .modal-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+  }
+
+  .productDetail-left {
+    width: 45vw;
+    .carousel{
+        max-height: 100vh;
+        .carousel-inner{
+            max-height: 100vh;
+            .carousel-item{
+                margin-top: 1rem;
+                img{
+                    width: 800px;
+                }
+            }
+        }
+    }
+  }
+  .productDetail-right {
+    background-color: #fff;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 5.5rem 1rem 5.5rem;
+
+    .content {
+
+      .header{
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin-bottom: .5rem;
+      }
+      .price{
+        color: black;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+
+      .sizes{
+        .size-header{
+            color: black;
+            font-weight: bold;
+            padding-bottom: 1rem;
+        }
+        .btn-group{
+            .input-group{
+                    border: 1px solid #999;
+                    border-radius: 50%;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: .8rem;
+                    margin-right: 1rem;
+                    width: 50px;
+                    height: 50px;
+                    position: relative;
+    
+                    &:hover{
+                        border-color: black;
+                        cursor: pointer;
+                    }
+    
+                label{
+                    position: absolute;
+                    font-size: 1rem;
+                    z-index: 999;
+                    &:hover{
+                        cursor: pointer;
+
+                    }
+
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            input{
+                z-index: -20;
+                &:checked + .input-group{
+                    background-color: black;
+                    color: #fff;
+                }
+            }
+           
+
+        }
+        
+        .size-table{
+            display: flex;
+            width: 40%;
+            padding-top: 3rem;
+            align-items: center;
+            i{
+                font-size: 1.5rem;
+
+            }
+            .size-p{
+                font-weight: bold;
+                font-size: 1rem;
+                margin-left: 1rem;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+      }
+      .footer{
+        display: flex;
+        align-items: center;
+        .button {
+            margin-top: 1rem;
+            background-color: rgb(30, 206, 148);
+            padding: 1rem 4rem;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: center;
+            width: 40%;
+            border-radius: 5px;
+            border: none;
+            &:hover {
+            opacity: .8;
+              cursor: pointer;
+            }
+          }
+
+          .liked-icon{
+            padding-left: 4rem;
+            padding-top: 1rem;
+            i{
+                font-size: 1.5rem;
+                align-items: center;
+            }
+            &:hover{
+                cursor: pointer;
+                color: red;
+            }
+          }
+      }
+    }
+    
+    .footer-content{
+        font-weight: bold;
+        display: flex;
+        width: 20%;
+        justify-content: space-between;
+        p{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+  }
+}
